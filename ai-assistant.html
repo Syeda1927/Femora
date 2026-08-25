@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Assistant | Femora</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            Fem<span>ora</span>
+        </a>
+
+        <nav class="nav-menu">
+
+            <a href="index.html"
+               data-en="Home"
+               data-ur="ہوم">
+                Home
+            </a>
+
+            <a href="menstrual-health.html"
+               data-en="Health Topics"
+               data-ur="صحت کے موضوعات">
+                Health Topics
+            </a>
+
+            <a href="about.html"
+               data-en="About"
+               data-ur="ہمارے بارے میں">
+                About
+            </a>
+
+            <a href="ai-assistant.html"
+               class="ai-nav-btn active"
+               data-en="Ask AI 🤖"
+               data-ur="AI سے پوچھیں 🤖">
+                Ask AI 🤖
+            </a>
+
+            <button id="language-btn" class="language-btn">
+                اردو
+            </button>
+
+        </nav>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= AI HERO ================= -->
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <span class="section-label"
+              data-en="FEMORA AI"
+              data-ur="فیمورا AI">
+            FEMORA AI
+        </span>
+
+        <h1>
+
+            <span data-en="Ask"
+                  data-ur="پوچھیں">
+                Ask
+            </span>
+
+            <span data-en="Femora AI"
+                  data-ur="فیمورا AI">
+                Femora AI
+            </span>
+
+        </h1>
+
+        <p data-en="Ask questions about women's health and get helpful, easy-to-understand information."
+           data-ur="خواتین کی صحت کے بارے میں سوالات پوچھیں اور آسان اور مفید معلومات حاصل کریں۔">
+
+            Ask questions about women's health and get helpful,
+            easy-to-understand information.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= AI CHAT ================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="ai-chat-box">
+
+            <!-- CHAT HEADER -->
+
+            <div class="ai-chat-header">
+
+                <div>
+
+                    <h2 data-en="Femora AI Assistant 🤖"
+                        data-ur="فیمورا AI اسسٹنٹ 🤖">
+
+                        Femora AI Assistant 🤖
+
+                    </h2>
+
+                    <p data-en="Your women's health information assistant"
+                       data-ur="خواتین کی صحت سے متعلق معلومات کا معاون">
+
+                        Your women's health information assistant
+
+                    </p>
+
+                </div>
+
+                <span class="ai-status">
+                    ●
+                </span>
+
+            </div>
+
+
+            <!-- CHAT MESSAGES -->
+
+            <div class="chat-messages" id="chatMessages">
+
+                <div class="ai-message">
+
+                    <div class="message-icon">
+                        🤖
+                    </div>
+
+                    <div class="message-content">
+
+                        <strong data-en="Femora AI"
+                                data-ur="فیمورا AI">
+
+                            Femora AI
+
+                        </strong>
+
+                        <p data-en="Hello! 🌸 I am Femora AI. You can ask me questions about periods, pregnancy, PCOS, fertility, menopause, nutrition and other women's health topics."
+                           data-ur="السلام علیکم! 🌸 میں فیمورا AI ہوں۔ آپ مجھ سے ماہواری، حمل، PCOS، زرخیزی، مینوپاز، غذائیت اور خواتین کی صحت کے دیگر موضوعات کے بارے میں سوالات پوچھ سکتی ہیں۔">
+
+                            Hello! 🌸 I am Femora AI. You can ask me
+                            questions about periods, pregnancy, PCOS,
+                            fertility, menopause, nutrition and other
+                            women's health topics.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EXAMPLE QUESTIONS -->
+
+                <div class="suggested-questions">
+
+                    <p data-en="You can ask:"
+                       data-ur="آپ یہ سوالات پوچھ سکتی ہیں:">
+
+                        You can ask:
+
+                    </p>
+
+                    <button type="button"
+                            class="suggestion-btn"
+                            data-question-en="Why are my periods irregular?"
+                            data-question-ur="میری ماہواری بے قاعدہ کیوں ہے؟">
+
+                        <span data-en="Why are my periods irregular?"
+                              data-ur="میری ماہواری بے قاعدہ کیوں ہے؟">
+
+                            Why are my periods irregular?
+
+                        </span>
+
+                    </button>
+
+
+                    <button type="button"
+                            class="suggestion-btn"
+                            data-question-en="What are common PCOS symptoms?"
+                            data-question-ur="PCOS کی عام علامات کیا ہیں؟">
+
+                        <span data-en="What are common PCOS symptoms?"
+                              data-ur="PCOS کی عام علامات کیا ہیں؟">
+
+                            What are common PCOS symptoms?
+
+                        </span>
+
+                    </button>
+
+
+                    <button type="button"
+                            class="suggestion-btn"
+                            data-question-en="What are early pregnancy symptoms?"
+                            data-question-ur="حمل کی ابتدائی علامات کیا ہیں؟">
+
+                        <span data-en="What are early pregnancy symptoms?"
+                              data-ur="حمل کی ابتدائی علامات کیا ہیں؟">
+
+                            What are early pregnancy symptoms?
+
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CHAT INPUT -->
+
+            <form id="chatForm" class="chat-input-area">
+
+                <input
+                    type="text"
+                    id="userMessage"
+                    autocomplete="off"
+                    data-placeholder-en="Type your health question..."
+                    data-placeholder-ur="اپنا صحت سے متعلق سوال لکھیں..."
+                    placeholder="Type your health question..."
+                >
+
+                <button type="submit"
+                        id="sendMessage">
+
+                    <span data-en="Send"
+                          data-ur="بھیجیں">
+                        Send
+                    </span>
+
+                    ➤
+
+                </button>
+
+            </form>
+
+
+            <!-- DISCLAIMER -->
+
+            <div class="ai-disclaimer">
+
+                <strong data-en="Important:"
+                        data-ur="اہم:">
+
+                    Important:
+
+                </strong>
+
+                <span data-en="Femora AI provides general health information and is not a replacement for a qualified healthcare professional. For serious or urgent symptoms, seek medical care."
+                      data-ur="فیمورا AI عمومی صحت سے متعلق معلومات فراہم کرتا ہے اور مستند طبی ماہر کا متبادل نہیں ہے۔ شدید یا ہنگامی علامات کی صورت میں طبی مدد حاصل کریں۔">
+
+                    Femora AI provides general health information
+                    and is not a replacement for a qualified
+                    healthcare professional. For serious or urgent
+                    symptoms, seek medical care.
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container footer-container">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo">
+                Fem<span>ora</span>
+            </a>
+
+            <p data-en="Understand Your Body, Care for Yourself."
+               data-ur="اپنے جسم کو سمجھیں، اپنا خیال رکھیں۔">
+
+                Understand Your Body, Care for Yourself.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 Femora.
+
+        <span data-en="All Rights Reserved."
+              data-ur="تمام حقوق محفوظ ہیں۔">
+
+            All Rights Reserved.
+
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="js/main.js"></script>
+<script src="js/language.js"></script>
+<script src="js/ai.js"></script>
+
+</body>
+</html>
